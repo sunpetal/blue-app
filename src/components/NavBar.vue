@@ -16,6 +16,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/vue/24/outline";
 import { PlusIcon } from "@heroicons/vue/20/solid";
+import SunMoon from "./SunMoon.vue";
 
 const route = useRoute();
 const navigationItems = [
@@ -99,9 +100,14 @@ const navigationItems = [
             </router-link>
           </div>
           <div class="hidden md:ml-4 md:flex md:shrink-0 md:items-center">
+            <div
+              class="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+            >
+              <SunMoon class="size-6" aria-hidden="true" />
+            </div>
             <button
               type="button"
-              class="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
+              class="relative ml-3 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
             >
               <span class="absolute -inset-1.5" />
               <BellIcon class="size-6" aria-hidden="true" />

@@ -1,30 +1,56 @@
-import { onMounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
 export function useTheme() {
-  let storedTheme = localStorage.getItem("theme");
-  if (!storedTheme) {
-    storedTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+  const theme = ref<"light" | "dark">(getSystemTheme());
+  let mediaQuery: MediaQueryList;
+
+  function getSystemTheme(): "light" | "dark" {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
-    localStorage.setItem("theme", storedTheme);
   }
-  const theme = ref(storedTheme);
 
-  const applyTheme = () => {
+  function applyTheme() {
     const html = document.documentElement;
-    html.classList.remove("light", "dark");
-    html.classList.add(theme.value);
+    // Only manage 'dark' class - Tailwind's required selector
+    if (theme.value === "dark") {
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+    }
     html.style.colorScheme = theme.value;
-  };
+  }
 
-  const toggleTheme = () => {
-    theme.value = theme.value === "light" ? "dark" : "light";
-    localStorage.setItem("theme", theme.value);
+  function handleSystemChange(e: MediaQueryListEvent) {
+    if (!localStorage.getItem("theme")) {
+      theme.value = e.matches ? "dark" : "light";
+      applyTheme();
+    }
+  }
+
+  function toggleTheme() {
+    const newTheme = theme.value === "light" ? "dark" : "light";
+    localStorage.setItem("theme", newTheme);
+    theme.value = newTheme;
     applyTheme();
-  };
+  }
 
   onMounted(() => {
+    // Get initial theme from localStorage or system
+    const storedTheme = localStorage.getItem("theme");
+    theme.value =
+      storedTheme === "dark" || storedTheme === "light"
+        ? storedTheme
+        : getSystemTheme();
+
+    // Set up system preference watcher
+    mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addEventListener("change", handleSystemChange);
     applyTheme();
+  });
+
+  onUnmounted(() => {
+    mediaQuery.removeEventListener("change", handleSystemChange);
   });
 
   return { theme, toggleTheme };
