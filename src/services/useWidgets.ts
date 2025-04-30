@@ -1,7 +1,13 @@
 import { ref } from "vue";
 
+interface Widget {
+  id: string;
+  name: string;
+  visible: boolean;
+}
+
 // Centralize widget visibility state
-const widgets = ref([
+const widgets = ref<Widget[]>([
   { id: "projectSearch", name: "Project Search", visible: true },
   { id: "projectSuggestions", name: "Project Suggestions", visible: true },
   {
@@ -15,7 +21,7 @@ const widgets = ref([
 ]);
 
 // Helper to get widget visibility
-const isWidgetVisible = (id) => {
+const isWidgetVisible = (id: string): boolean => {
   const widget = widgets.value.find((w) => w.id === id);
   return widget ? widget.visible : false;
 };
