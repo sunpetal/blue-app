@@ -1,5 +1,25 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Temporary Branding Colors
+backgrounds: bg-white dark:bg-gray-900
+text: text-gray-900 dark:text-white (other varying shades of gray)
+primary: #50A9E4 (Judy branding email)
+secondary: #2E8ECE, #6EC0FF (blue compliments for hovers and outlines)
+accent: #B45309 (primary orange accent)
+secondary accents: #92400E, #D97706 (orange compliments for hovers and outlines)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+primary button example:
+<button
+type="submit"
+class="flex w-full items-center justify-center rounded-md bg-[#50A9E4] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#2E8ECE] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2E8ECE] dark:hover:bg-[#6EC0FF] dark:focus-visible:outline-[#6EC0FF]"
+
+> Subscribe
+> </button>
+
+secondary button example:
+<button
+type="submit"
+class="flex w-full items-center justify-center rounded-md bg-[#B45309] px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#92400E] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#92400E] dark:hover:bg-[#D97706] dark:focus-visible:outline-[#D97706]"
+
+> Subscribe
+> </button>

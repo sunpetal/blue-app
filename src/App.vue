@@ -1,20 +1,19 @@
 <script setup lang="ts">
 import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="bg-white dark:bg-gray-600">
+  <div class="flex flex-col min-h-screen bg-white dark:bg-gray-900">
     <NavBar />
-    <router-view v-slot="{ Component }">
-      <component :is="Component" class="router-content" />
-    </router-view>
+    <main class="flex-1 mt-16">
+      <router-view v-slot="{ Component }">
+        <component
+          :is="Component"
+          class="h-[calc(100vh-4rem)] overflow-y-auto"
+        />
+      </router-view>
+    </main>
+    <Footer />
   </div>
 </template>
-
-<style>
-.router-content {
-  margin-top: 4rem; /* Height of navbar */
-  height: calc(100vh - 4rem);
-  overflow-y: auto;
-}
-</style>
