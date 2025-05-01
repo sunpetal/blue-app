@@ -16,7 +16,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/vue/24/outline";
 import { PlusIcon } from "@heroicons/vue/20/solid";
-import SunMoon from "./SunMoon.vue";
+import SunMoon from "../components/SunMoon.vue";
 import PalmTree from "../assets/PalmTree.vue";
 import me from "../assets/me.jpeg";
 
@@ -29,7 +29,7 @@ const navigationItems = [
   { name: "Team", path: "/team" },
   { name: "Client", path: "/client" },
   { name: "Login", path: "/login" },
-  { name: "Test", path: "/test" },
+  { name: "Test", path: "/dashboard" },
 ];
 </script>
 
@@ -139,6 +139,39 @@ const navigationItems = [
                   class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none dark:bg-gray-800 dark:ring-gray-700"
                 >
                   <!-- Menu items remain unchanged -->
+                  <MenuItem v-slot="{ active }">
+                    <router-link
+                      to="/profile"
+                      :class="[
+                        active ? 'bg-gray-100' : '',
+                        'block px-4 py-2 text-sm text-gray-700',
+                      ]"
+                    >
+                      Your Profile
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem v-slot="{ active }">
+                    <router-link
+                      to="/settings"
+                      :class="[
+                        active ? 'bg-gray-100' : '',
+                        'block px-4 py-2 text-sm text-gray-700',
+                      ]"
+                    >
+                      Settings
+                    </router-link>
+                  </MenuItem>
+                  <MenuItem v-slot="{ active }">
+                    <router-link
+                      to="/logout"
+                      :class="[
+                        active ? 'bg-gray-100' : '',
+                        'block px-4 py-2 text-sm text-gray-700',
+                      ]"
+                    >
+                      Sign out
+                    </router-link>
+                  </MenuItem>
                 </MenuItems>
               </transition>
             </Menu>

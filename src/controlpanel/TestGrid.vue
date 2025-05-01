@@ -1,12 +1,12 @@
 <script lang="ts" setup>
-import BoxOne from "../components/BoxOne.vue";
-import BoxTwo from "../components/BoxTwo.vue";
-import BoxThree from "../components/BoxThree.vue";
-import BoxFour from "../components/BoxFour.vue";
-import BoxFive from "../components/BoxFive.vue";
-import BoxSix from "../components/BoxSix.vue";
-import BoxSeven from "../components/BoxSeven.vue";
-import BoxEight from "../components/BoxEight.vue";
+import BoxOne from "../controlpanel/bits/BoxOne.vue";
+import BoxTwo from "../controlpanel/bits/BoxTwo.vue";
+import BoxThree from "../controlpanel/bits/BoxThree.vue";
+import BoxFour from "../controlpanel/bits/BoxFour.vue";
+import BoxFive from "../controlpanel/bits/BoxFive.vue";
+import BoxSix from "../controlpanel/bits/BoxSix.vue";
+import BoxSeven from "../controlpanel/bits/BoxSeven.vue";
+import BoxEight from "../controlpanel/bits/BoxEight.vue";
 </script>
 
 <template>

@@ -1,0 +1,605 @@
+{
+  "projects": [
+    {
+      "name": "Graph API",
+      "initials": "GA",
+      "href": "#",
+      "members": 16,
+      "bgColor": "bg-pink-600"
+    },
+    {
+      "name": "Component Design",
+      "initials": "CD",
+      "href": "#",
+      "members": 12,
+      "bgColor": "bg-purple-600"
+    },
+    {
+      "name": "Templates",
+      "initials": "T",
+      "href": "#",
+      "members": 16,
+      "bgColor": "bg-yellow-500"
+    },
+    {
+      "name": "React Components",
+      "initials": "RC",
+      "href": "#",
+      "members": 8,
+      "bgColor": "bg-green-500"
+    }
+  ],
+  "statuses": {
+    "Active": "text-green-700 bg-green-50 ring-green-600/20",
+    "Soon": "text-yellow-700 bg-yellow-50 ring-yellow-600/20",
+    "Complete": "text-blue-700 bg-blue-50 ring-blue-600/20"
+  },
+  "clients": [
+    {
+      "id": 1,
+      "name": "Project Tracker",
+      "imageUrl": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-01.jpg",
+      "lastInvoice": {
+        "date": "December 13, 2022",
+        "dateTime": "2022-12-13",
+        "amount": "$2,000.00",
+        "status": "Active"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Brew",
+      "imageUrl": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-02.jpg",
+      "lastInvoice": {
+        "date": "January 22, 2023",
+        "dateTime": "2023-01-22",
+        "amount": "$14,000.00",
+        "status": "Soon"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Profiler",
+      "imageUrl": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-03.jpg",
+      "lastInvoice": {
+        "date": "January 23, 2023",
+        "dateTime": "2023-01-23",
+        "amount": "$7,600.00",
+        "status": "Complete"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Resource Grid",
+      "imageUrl": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-04.jpg",
+      "lastInvoice": {
+        "date": "January 24, 2023",
+        "dateTime": "2023-01-24",
+        "amount": "$23,600.00",
+        "status": "Active"
+      }
+    }
+  ],
+  "contributions": [
+    {
+      "id": 1,
+      "title": "Implement AI-Powered Search Feature",
+      "href": "#",
+      "author": { "name": "Leslie Alexander", "href": "#" },
+      "date": "2d ago",
+      "dateTime": "2023-10-12T22:34Z",
+      "status": "active",
+      "totalComments": 24,
+      "commenters": [
+        {
+          "id": 12,
+          "name": "Emma Dorsey",
+          "imageUrl": "https://images.unsplash.com/photo-1505840717430-882ce147ef2d"
+        },
+        {
+          "id": 6,
+          "name": "Tom Cook",
+          "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+        },
+        {
+          "id": 4,
+          "name": "Lindsay Walton",
+          "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+        },
+        {
+          "id": 16,
+          "name": "Benjamin Russell",
+          "imageUrl": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
+        },
+        {
+          "id": 23,
+          "name": "Hector Gibbons",
+          "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Design New Landing Page",
+      "href": "#",
+      "author": { "name": "Michael Foster", "href": "#" },
+      "date": "3d ago",
+      "dateTime": "2023-10-11T19:20Z",
+      "status": "active",
+      "totalComments": 12,
+      "commenters": [
+        {
+          "id": 13,
+          "name": "Alicia Bell",
+          "imageUrl": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472"
+        },
+        {
+          "id": 16,
+          "name": "Benjamin Russell",
+          "imageUrl": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
+        },
+        {
+          "id": 3,
+          "name": "Dries Vincent",
+          "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Optimize Database Queries",
+      "href": "#",
+      "author": { "name": "Dries Vincent", "href": "#" },
+      "date": "5d ago",
+      "dateTime": "2023-10-09T12:59Z",
+      "status": "resolved",
+      "totalComments": 8,
+      "commenters": [
+        {
+          "id": 19,
+          "name": "Lawrence Hunter",
+          "imageUrl": "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6"
+        },
+        {
+          "id": 21,
+          "name": "Angela Fisher",
+          "imageUrl": "https://images.unsplash.com/photo-1501031170107-cfd33f0cbdcc"
+        },
+        {
+          "id": 14,
+          "name": "Jenny Wilson",
+          "imageUrl": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac"
+        },
+        {
+          "id": 16,
+          "name": "Benjamin Russell",
+          "imageUrl": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Update User Authentication Module",
+      "href": "#",
+      "author": { "name": "Lindsay Walton", "href": "#" },
+      "date": "5d ago",
+      "dateTime": "2023-10-09T10:04Z",
+      "status": "resolved",
+      "totalComments": 15,
+      "commenters": [
+        {
+          "id": 10,
+          "name": "Emily Selman",
+          "imageUrl": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe"
+        },
+        {
+          "id": 11,
+          "name": "Kristin Watson",
+          "imageUrl": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6"
+        },
+        {
+          "id": 6,
+          "name": "Tom Cook",
+          "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Research New Market Opportunities",
+      "href": "#",
+      "author": { "name": "Courtney Henry", "href": "#" },
+      "date": "6d ago",
+      "dateTime": "2023-10-08T20:12Z",
+      "status": "active",
+      "totalComments": 20,
+      "commenters": [
+        {
+          "id": 11,
+          "name": "Kristin Watson",
+          "imageUrl": "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6"
+        },
+        {
+          "id": 6,
+          "name": "Tom Cook",
+          "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+        },
+        {
+          "id": 10,
+          "name": "Emily Selman",
+          "imageUrl": "https://images.unsplash.com/photo-1502685104226-ee32379fefbe"
+        },
+        {
+          "id": 16,
+          "name": "Benjamin Russell",
+          "imageUrl": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Plan Team Building Activities",
+      "href": "#",
+      "author": { "name": "Tom Cook", "href": "#" },
+      "date": "1w ago",
+      "dateTime": "2023-10-07T15:30Z",
+      "status": "active",
+      "totalComments": 5,
+      "commenters": [
+        {
+          "id": 21,
+          "name": "Angela Fisher",
+          "imageUrl": "https://images.unsplash.com/photo-1501031170107-cfd33f0cbdcc"
+        },
+        {
+          "id": 12,
+          "name": "Emma Dorsey",
+          "imageUrl": "https://images.unsplash.com/photo-1505840717430-882ce147ef2d"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Finalize Quarterly Financial Report",
+      "href": "#",
+      "author": { "name": "Jenny Wilson", "href": "#" },
+      "date": "1w ago",
+      "dateTime": "2023-10-06T09:45Z",
+      "status": "resolved",
+      "totalComments": 18,
+      "commenters": [
+        {
+          "id": 16,
+          "name": "Benjamin Russell",
+          "imageUrl": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79"
+        },
+        {
+          "id": 3,
+          "name": "Dries Vincent",
+          "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Develop Mobile App Prototype",
+      "href": "#",
+      "author": { "name": "Emily Selman", "href": "#" },
+      "date": "2w ago",
+      "dateTime": "2023-10-05T11:20Z",
+      "status": "active",
+      "totalComments": 22,
+      "commenters": [
+        {
+          "id": 13,
+          "name": "Alicia Bell",
+          "imageUrl": "https://images.unsplash.com/photo-1509783236416-c9ad59bae472"
+        },
+        {
+          "id": 4,
+          "name": "Lindsay Walton",
+          "imageUrl": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Conduct User Experience Testing",
+      "href": "#",
+      "author": { "name": "Kristin Watson", "href": "#" },
+      "date": "2w ago",
+      "dateTime": "2023-10-04T14:00Z",
+      "status": "active",
+      "totalComments": 10,
+      "commenters": [
+        {
+          "id": 14,
+          "name": "Jenny Wilson",
+          "imageUrl": "https://images.unsplash.com/photo-1507101105822-7472b28e22ac"
+        },
+        {
+          "id": 19,
+          "name": "Lawrence Hunter",
+          "imageUrl": "https://images.unsplash.com/photo-1513910367299-bce8d8a0ebf6"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Prepare for Annual Tech Conference",
+      "href": "#",
+      "author": { "name": "Leslie Alexander", "href": "#" },
+      "date": "3w ago",
+      "dateTime": "2023-10-01T08:00Z",
+      "status": "resolved",
+      "totalComments": 25,
+      "commenters": [
+        {
+          "id": 12,
+          "name": "Emma Dorsey",
+          "imageUrl": "https://images.unsplash.com/photo-1505840717430-882ce147ef2d"
+        },
+        {
+          "id": 6,
+          "name": "Tom Cook",
+          "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e"
+        }
+      ]
+    }
+  ],
+  "sortOptions": [
+    { "name": "Most Popular", "current": true },
+    { "name": "Best Rating", "current": false },
+    { "name": "Newest", "current": false },
+    { "name": "Oldest", "current": false },
+    { "name": "Status", "current": false }
+  ],
+  "activeFilters": [{ "label": "Objects", "value": "objects" }],
+  "products": [
+    {
+      "id": 1,
+      "name": "Project Tracker",
+      "category": "Vue3/Vite",
+      "description": "Track and manage your projects seamlessly.",
+      "status": "Active",
+      "date": "2023-10-01",
+      "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-01.jpg",
+      "imageAlt": "Project tracker dashboard screenshot."
+    },
+    {
+      "id": 2,
+      "name": "Profile Builder",
+      "category": "React",
+      "description": "Create and customize user profiles.",
+      "status": "Inactive",
+      "date": "2023-09-15",
+      "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-02.jpg",
+      "imageAlt": "Profile builder application screenshot."
+    },
+    {
+      "id": 3,
+      "name": "Timeline Tool",
+      "category": "Vue3",
+      "description": "Visualize and plan project timelines.",
+      "status": "Active",
+      "date": "2023-08-20",
+      "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-03.jpg",
+      "imageAlt": "Timeline visualization tool screenshot."
+    },
+    {
+      "id": 4,
+      "name": "Resource Manager",
+      "category": "Vite",
+      "description": "Optimize and allocate resources effectively.",
+      "status": "Completed",
+      "date": "2023-07-10",
+      "imageSrc": "https://tailwindui.com/plus/img/ecommerce-images/product-page-05-related-product-04.jpg",
+      "imageAlt": "Resource manager dashboard screenshot."
+    }
+  ],
+  "bentoCards": [
+    {
+      "title": "Search",
+      "imageSrc": "https://tailwindui.com/plus/img/component-images/bento-01-speed.png",
+      "imageAlt": "Search",
+      "headline": "Is your Idea on the List?",
+      "description": "Not sure if your Project Idea is already on the list? Search for key words that describe what you want to do. If it's not there, you can add it."
+    },
+    {
+      "title": "Integrations",
+      "imageSrc": "https://tailwindui.com/plus/img/component-images/bento-01-integrations.png",
+      "imageAlt": "Integrations",
+      "headline": "Share your favorite tools",
+      "description": "Search for projects based on your favorite tools and integrations."
+    },
+    {
+      "title": "Submissions",
+      "imageSrc": "https://tailwindui.com/plus/img/component-images/bento-01-network.png",
+      "imageAlt": "Submissions",
+      "headline": "Your Idea is Important",
+      "description": "Do you have an Idea that could make work easier and more efficient? Let's see if we can make it."
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Standup VUE3/Vite Application",
+      "startDatetime": "2023-10-03T14:30:00",
+      "endDatetime": "2023-10-03T16:30:00",
+      "location": "Conference Room A",
+      "allDay": false,
+      "bgColor": "#0072BC"
+    },
+    {
+      "id": 2,
+      "name": "Meeting on Docker Containers",
+      "startDatetime": "2023-10-25T00:00:00",
+      "endDatetime": "2023-10-25T23:59:59",
+      "location": "Online",
+      "allDay": true,
+      "bgColor": "#22C55E"
+    },
+    {
+      "id": 3,
+      "name": "Work with DevOps for Pipeline",
+      "startDatetime": "2023-10-28T10:00:00",
+      "endDatetime": "2023-10-28T10:15:00",
+      "location": "Lab 2",
+      "allDay": false,
+      "bgColor": "#DB2777"
+    },
+    {
+      "id": 4,
+      "name": "Team Building Workshop",
+      "startDatetime": "2024-11-05T09:00:00",
+      "endDatetime": "2024-11-05T17:00:00",
+      "location": "Offsite Retreat Center",
+      "allDay": false,
+      "bgColor": "#F59E0B"
+    },
+    {
+      "id": 5,
+      "name": "Project Alpha Deadline",
+      "startDatetime": "2024-11-10T00:00:00",
+      "endDatetime": "2024-11-10T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#EF4444"
+    },
+    {
+      "id": 6,
+      "name": "Client Meeting",
+      "startDatetime": "2024-11-15T14:00:00",
+      "endDatetime": "2024-11-15T15:30:00",
+      "location": "Client Office",
+      "allDay": false,
+      "bgColor": "#10B981"
+    },
+    {
+      "id": 7,
+      "name": "Company Town Hall",
+      "startDatetime": "2024-11-20T11:00:00",
+      "endDatetime": "2024-11-20T12:00:00",
+      "location": "Main Auditorium",
+      "allDay": false,
+      "bgColor": "#6366F1"
+    },
+    {
+      "id": 8,
+      "name": "Thanksgiving Day",
+      "startDatetime": "2024-11-28T00:00:00",
+      "endDatetime": "2024-11-28T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#FBBF24"
+    },
+    {
+      "id": 9,
+      "name": "Black Friday Sale",
+      "startDatetime": "2024-11-29T00:00:00",
+      "endDatetime": "2024-11-29T23:59:59",
+      "location": "Online",
+      "allDay": true,
+      "bgColor": "#1F2937"
+    },
+    {
+      "id": 10,
+      "name": "Cyber Monday",
+      "startDatetime": "2024-12-02T00:00:00",
+      "endDatetime": "2024-12-02T23:59:59",
+      "location": "Online",
+      "allDay": true,
+      "bgColor": "#1E40AF"
+    },
+    {
+      "id": 11,
+      "name": "End of Year Party",
+      "startDatetime": "2024-12-20T18:00:00",
+      "endDatetime": "2024-12-20T23:00:00",
+      "location": "Grand Ballroom",
+      "allDay": false,
+      "bgColor": "#EC4899"
+    },
+    {
+      "id": 12,
+      "name": "Christmas Eve",
+      "startDatetime": "2024-12-24T00:00:00",
+      "endDatetime": "2024-12-24T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#F43F5E"
+    },
+    {
+      "id": 13,
+      "name": "Christmas Day",
+      "startDatetime": "2024-12-25T00:00:00",
+      "endDatetime": "2024-12-25T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#84CC16"
+    },
+    {
+      "id": 14,
+      "name": "New Year's Eve",
+      "startDatetime": "2024-12-31T20:00:00",
+      "endDatetime": "2025-01-01T01:00:00",
+      "location": "City Square",
+      "allDay": false,
+      "bgColor": "#F59E0B"
+    },
+    {
+      "id": 15,
+      "name": "New Year's Day",
+      "startDatetime": "2025-01-01T00:00:00",
+      "endDatetime": "2025-01-01T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#3B82F6"
+    },
+    {
+      "id": 16,
+      "name": "First Quarter Planning",
+      "startDatetime": "2025-01-05T09:00:00",
+      "endDatetime": "2025-01-05T12:00:00",
+      "location": "Conference Room B",
+      "allDay": false,
+      "bgColor": "#8B5CF6"
+    },
+    {
+      "id": 17,
+      "name": "Budget Meeting",
+      "startDatetime": "2025-01-10T14:00:00",
+      "endDatetime": "2025-01-10T15:30:00",
+      "location": "Meeting Room 3",
+      "allDay": false,
+      "bgColor": "#6EE7B7"
+    },
+    {
+      "id": 18,
+      "name": "Team Outing",
+      "startDatetime": "2025-01-15T00:00:00",
+      "endDatetime": "2025-01-15T23:59:59",
+      "location": "Amusement Park",
+      "allDay": true,
+      "bgColor": "#D97706"
+    },
+    {
+      "id": 19,
+      "name": "Martin Luther King Jr. Day",
+      "startDatetime": "2025-01-20T00:00:00",
+      "endDatetime": "2025-01-20T23:59:59",
+      "location": "",
+      "allDay": true,
+      "bgColor": "#1E293B"
+    },
+    {
+      "id": 20,
+      "name": "Product Launch",
+      "startDatetime": "2025-01-25T10:00:00",
+      "endDatetime": "2025-01-25T12:00:00",
+      "location": "Main Auditorium",
+      "allDay": false,
+      "bgColor": "#DC2626"
+    }
+  ]
+}

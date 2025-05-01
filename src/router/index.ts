@@ -7,7 +7,7 @@ import Projects from "../views/Projects.vue";
 import Team from "../views/Team.vue";
 import Client from "../views/Client.vue";
 import Login from "../views/Login.vue";
-import Test from "../views/TestGrid.vue";
+import Dashboard from "../views/Dashboard.vue";
 
 const routes = [
   { path: "/", component: Home },
@@ -17,7 +17,7 @@ const routes = [
   { path: "/team", component: Team },
   { path: "/client", component: Client },
   { path: "/login", component: Login },
-  { path: "/test", component: Test },
+  { path: "/dashboard", component: Dashboard },
 ];
 
 const router = createRouter({
