@@ -29,6 +29,7 @@ const navigationItems = [
   { name: "Team", path: "/team" },
   { name: "Client", path: "/client" },
   { name: "Login", path: "/login" },
+  { name: "Test", path: "/test" },
 ];
 </script>
 

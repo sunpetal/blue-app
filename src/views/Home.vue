@@ -3,7 +3,7 @@ import BentoGrid from "../components/BentoGrid.vue";
 </script>
 
 <template>
-  <div class="h-[calc(100vh-4rem)] overflow-hidden">
+  <div class="p-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
     <BentoGrid />
   </div>
 </template>
